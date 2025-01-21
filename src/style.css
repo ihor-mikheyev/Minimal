@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Bolt";
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Playfair Display Regular";
+  src: url(./fonts/PlayfairDisplay-Regular.ttf);
+}
+
+:root {
+  --blue-main: #0a224a;
+  --blue-light: #f7faff;
+  --blue-hover: #061835;
+  --dark-gray: #7a7a7a;
+  --gray-middle: #b6b6b6;
+  --gray-light: #d9d9d9;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 1.125rem;
+  color: var(--blue-main);
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--blue-light);
+}
+.container {
+  min-width: 320px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.header__container {
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+}
+.logo {
+}
+
+.icon-logo {
+  fill: var(--blue-main);
+  transition: fill 300ms ease-in-out;
+}
+.icon-logo:hover {
+  fill: var(--blue-hover);
+}
+.navigation {
+}
+
+.navigation__list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  left: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.navigation__list.showMenu {
+  left: 0;
+}
+
+.menu-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: var(--blue-main);
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease-in;
+}
+.menu-button:hover {
+  stroke: var(--blue-hover);
+  color: var(--blue-hover);
+}
+.icon-menu {
+  stroke: var(--blue-main);
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero > .container {
+}
+.hero__image {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero__body {
+  position: relative;
+  top: 140px;
+}
+.title {
+  font-family: "Playfair Display Regular";
+  font-size: 28px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--blue-main);
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.text {
+  font-size: 16px;
+  line-height: 150%;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.button {
+  padding: 12px 76.5px;
+  background-color: var(--blue-main);
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--white);
+  line-height: 150%;
+  transition: background-color 300ms ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--blue-hover);
+}
+
+/* About us */
+.about {
+  margin-top: 64px;
+}
+
+.about-head {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.tag {
+  position: relative;
+  padding-left: 50px;
+}
+.tag::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 30px;
+  background-color: var(--blue-main);
+  top: 9px;
+  left: 0;
+}
+.title {
+}
+.subtitle {
+  font-size: 1.75rem;
+  line-height: 150%;
+}
+.text {
+}
+.data > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.data span {
+  display: block;
+  font-size: 50px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.data li {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
