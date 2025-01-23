@@ -37,14 +37,22 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto Regular", sans-serif;
   font-size: 1.125rem;
   color: var(--blue-main);
-  overflow: hidden;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--blue-light);
 }
 .container {
@@ -190,6 +198,12 @@ body {
 }
 .text {
 }
+.data {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
 .data > ul {
   display: flex;
   flex-direction: column;
@@ -210,4 +224,133 @@ body {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
+}
+
+.sofa-img {
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 86px;
+}
+
+.products-prices {
+  border-top: 1px solid var(--blue-hover);
+  border-bottom: 1px solid var(--blue-main);
+}
+
+.products-prices:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.products-prices li:not(:last-child) {
+  border-bottom: 1px solid var(--blue-main);
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.position {
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 150%;
+}
+.position-price {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+/* our products */
+.products {
+}
+.title {
+}
+.subtitle {
+}
+.products-title {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 32px;
+}
+.products-image {
+  margin-bottom: 14px;
+}
+.text p {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.products-text {
+}
+.bestsellers {
+}
+.bestselles-list {
+}
+.bestsellers-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.position-price {
+}
+/* reviews */
+
+.reviews {
+  background-color: var(--blue-light);
+}
+.container {
+}
+.title {
+}
+.subtitle {
+}
+.client-review {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 24px;
+}
+.client {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.client > img {
+  width: 48px;
+  height: 48px;
+}
+
+.client-name > p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  text-transform: uppercase;
+}
+.comment {
+}
+
+/* newsletter */
+
+.newsletter {
+  margin-top: 64px;
+}
+.container {
+}
+.title {
+}
+.subtitle {
+}
+.text {
+}
+.form {
+}
+.input {
+}
+.button {
 }

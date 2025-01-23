@@ -17,12 +17,12 @@
           </a>
           <nav class="navigation">
             <ul class="navigation__list">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our production</a></li>
-              <li><a href="#">Prices</a></li>
-              <li><a href="#">Bestsellers</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#products">Our production</a></li>
+              <li><a href="#prices">Prices</a></li>
+              <li><a href="#bestsellers">Bestsellers</a></li>
+              <li><a href="#review">Reviews</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
           <button class="menu-button" type="button">
@@ -80,6 +80,123 @@
               </li>
             </ul>
           </article>
+        </div>
+        <img class="sofa-img" src="./src/img/sofa01-mobile.jpg" alt="Sofa" />
+        <div class="container">
+          <ul id="prices" class="products-prices">
+            <li>
+              <div class="product-item">
+                <p class="position">chair</p>
+                <p class="position-price">from 200$</p>
+              </div>
+            </li>
+            <li>
+              <div class="product-item">
+                <p class="position">tables</p>
+                <p class="position-price">from 250$</p>
+              </div>
+            </li>
+            <li>
+              <div class="product-item">
+                <p class="position">dressers</p>
+                <p class="position-price">from 300$</p>
+              </div>
+            </li>
+            <li>
+              <div class="product-item">
+                <p class="position">safas</p>
+                <p class="position-price">from 500$</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="products" class="products">
+        <div class="container">
+          <h2 class="title subtitle products-title">our products</h2>
+          <img
+            class="products-image"
+            src="./src/img/table01-mobile.jpg"
+            alt="Table"
+          />
+          <div class="text products-text">
+            <p>Minimalist storage solutions</p>
+          </div>
+          <div id="bestsellers" class="bestsellers">
+            <h2 class="title subtitle products-title">bestsellers</h2>
+            <ul class="bestselles-list">
+              <li class="bestsellers-item">
+                <img
+                  src="./src/img/bestsellers01-mobile.jpg"
+                  alt="Platform Bed"
+                />
+                <div class="text">
+                  <p>The modern platform bed</p>
+                  <p class="position-price">750$</p>
+                </div>
+              </li>
+              <li class="bestsellers-item">
+                <img
+                  src="./src/img/bestsellers02-mobile.jpg"
+                  alt="Platform Bed"
+                />
+                <div class="text">
+                  <p>The Cozy Lounge Chair</p>
+                  <p class="position-price">230$</p>
+                </div>
+              </li>
+              <li class="bestsellers-item">
+                <img
+                  src="./src/img/bestsellers03-mobile.jpg"
+                  alt="Platform Bed"
+                />
+                <div class="text">
+                  <p>The industrial accent chair</p>
+                  <p class="position-price">250$</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2 class="title subtitle products-title">Clients reviews</h2>
+          <article class="client-review">
+            <div class="client">
+              <img src="./src/img/portrait.jpg" alt="Client portrait" />
+              <div class="client-name">
+                <p>Alexandra dream</p>
+                <span>1 week ago</span>
+              </div>
+            </div>
+            <div class="comment">
+              <p>
+                I was blown away by the quality and craftsmanship of the
+                furniture I received from this company. Each piece was unique
+                and beautifully designed, and you can tell that a lot of thought
+                and care goes into every detail.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container">
+          <h2 class="title subtitle products-title">newsletter</h2>
+          <div class="text">
+            <p>
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+          </div>
+          <form action="#" class="form">
+            <input class="input" type="text" placeholder="Name" />
+            <input type="email" name="email" id="email" />
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree">Agree to subscribe to the newsletter</label>
+            <button class="button" type="submit">Send</button>
+          </form>
         </div>
       </section>
     </main>
